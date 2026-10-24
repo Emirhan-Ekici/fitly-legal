@@ -25,7 +25,7 @@
 </head>
 <body>
   <h1>Fitly — Privacy Policy</h1>
-  <p class="muted">Last updated: 21 October 2026</p>
+  <p class="muted">Last updated: 24 October 2026</p>
   <p class="lang"><a href="#tr">Türkçe</a></p>
 
   <p>Fitly (“the App”, “we”, “us”) is an AI styling app for managing your
@@ -49,6 +49,8 @@
     <li><strong>Wardrobe content</strong> — clothing photos, garment attributes (category, colour, fabric, etc.), outfits, outfit calendar and style preferences, for cross-device backup and sync. Supabase Postgres + Storage (EU). Linked to you.</li>
     <li><strong>Body profile (if entered)</strong> — gender, height, weight, body type, measurements, for more accurate suggestions and sync. Supabase (EU). Linked to you.</li>
     <li><strong>Clothing photos — AI analysis</strong> — garment recognition and outfit suggestions. Sent through our HTTPS proxy to the Gemini model on Google Cloud Vertex AI for <strong>one-time</strong> analysis; not stored on our servers for analysis and never used for ads or profiling.</li>
+    <li><strong>Model try-on (optional)</strong> — when you tap “Try on model”, the photos of the outfit’s pieces and a stock model photo (not your photo) are sent through our HTTPS proxy to Google Cloud Vertex AI (Gemini image model) to create one image. The result is stored <strong>only on your device</strong> (and with the outfit if you save it); we keep only a usage record (account ID, time, result code) to apply the daily limit.</li>
+    <li><strong>Quests, daily streak and invites</strong> — the days you open the App, quest rewards, your invite code and who joined with it are stored in Supabase (EU) to grant try-on rewards. Inviters see only counts, never who joined.</li>
     <li><strong>Background removal (optional)</strong> — if you choose “Remove background” when adding a piece, the background is removed <strong>on your device</strong> (iOS: Apple Vision, Android: Google ML Kit). The photo does not leave your device for this.</li>
     <li><strong>Approximate location (optional)</strong> — used only to fetch local weather. Not stored; you can choose the weather manually instead.</li>
     <li><strong>Usage data (can be turned off)</strong> — which features you use (e.g. opening the App, adding an item, generating or saving an outfit, an AI analysis failing), short labels (e.g. outfit occasion), app version, platform, language and your account ID. Used to understand which features are used and where problems occur, so we can improve the App. Contains <strong>no</strong> photos, item names or descriptions, free text, email or location, and no session recording. Supabase (EU) and PostHog (USA). Linked to you.</li>
@@ -118,7 +120,7 @@
 
   <h1 id="tr" lang="tr">Fitly — Gizlilik Politikası</h1>
   <div lang="tr">
-  <p class="muted">Son güncelleme: 21 Ekim 2026</p>
+  <p class="muted">Son güncelleme: 24 Ekim 2026</p>
 
   <p>Fitly, gardırobunu ve kombinlerini yönetmen için bir yapay zekâ stil
   uygulamasıdır. Bu politika hangi verileri neden işlediğimizi ve bunları nasıl
@@ -141,6 +143,8 @@
     <li><strong>Gardırop içeriği</strong> — kıyafet fotoğrafları, kıyafet bilgileri (kategori, renk, kumaş vb.), kombinler, kombin takvimi ve stil tercihleri; cihazlar arası yedek ve senkron için. Supabase Postgres + Storage (AB). Kimliğine bağlı.</li>
     <li><strong>Vücut profili (girdiysen)</strong> — cinsiyet, boy, kilo, vücut tipi, ölçüler; daha isabetli öneri ve senkron için. Supabase (AB). Kimliğine bağlı.</li>
     <li><strong>Kıyafet fotoğrafları — AI analizi</strong> — kıyafet tanıma ve kombin önerisi. Fotoğraf, HTTPS proxy'miz üzerinden Google Cloud Vertex AI'daki Gemini modeline <strong>tek seferlik</strong> analiz için iletilir; sunucularımızda analiz amacıyla saklanmaz, reklam veya profil için kullanılmaz.</li>
+    <li><strong>Modele giydirme (opsiyonel)</strong> — “Modele giydir”e dokunduğunda kombindeki parçaların fotoğrafları ve hazır bir model fotoğrafı (senin fotoğrafın değil) HTTPS proxy'miz üzerinden Google Cloud Vertex AI'daki Gemini görsel modeline tek görsel üretmek için iletilir. Sonuç <strong>yalnızca cihazında</strong> (kaydedersen kombinle birlikte) saklanır; günlük sınır için yalnızca kullanım kaydı (hesap kimliği, zaman, sonuç kodu) tutarız.</li>
+    <li><strong>Görevler, günlük seri ve davet</strong> — uygulamayı açtığın günler, görev ödülleri, davet kodun ve kodunla katılanlar model giydirme hakkı vermek için Supabase'de (AB) saklanır. Davet eden yalnızca sayıyı görür, kimin katıldığını görmez.</li>
     <li><strong>Arka plan kaldırma (opsiyonel)</strong> — eklerken “Arka planı kaldır” seçersen arka plan <strong>cihazında</strong> kaldırılır (iOS: Apple Vision, Android: Google ML Kit). Fotoğraf bu işlem için cihazdan çıkmaz.</li>
     <li><strong>Yaklaşık konum (opsiyonel)</strong> — yalnızca hava durumu için. Saklanmaz; havayı elle de seçebilirsin.</li>
     <li><strong>Kullanım verisi (kapatılabilir)</strong> — hangi özelliği kullandığın (ör. uygulamayı açma, parça ekleme, kombin oluşturma/kaydetme, AI analizinin başarısız olması), kısa etiketler (ör. kombin durumu), uygulama sürümü, platform, dil ve hesap kimliği. Hangi özelliklerin kullanıldığını ve nerede sorun yaşandığını anlayıp uygulamayı geliştirmek için. Fotoğraf, parça adı/açıklaması, serbest metin, e-posta veya konum <strong>içermez</strong>; ekran kaydı yapılmaz. Supabase (AB) ve PostHog (ABD). Kimliğine bağlı.</li>
