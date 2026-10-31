@@ -25,191 +25,180 @@
 </head>
 <body>
   <h1>Fitly — Privacy Policy</h1>
-  <p class="muted">Last updated: 24 October 2026</p>
+  <p class="muted">Last updated: 1 November 2026</p>
   <p class="lang"><a href="#tr">Türkçe</a></p>
 
-  <p>Fitly (“the App”, “we”, “us”) is an AI styling app for managing your
-  wardrobe and outfits. This policy explains what we process, why, and how you
-  can control it.</p>
+<h2>In short</h2>
 
-  <h2>Summary</h2>
-  <ul>
-    <li><strong>An account is required.</strong> You sign in with Google, Sign in with Apple, or email and password.</li>
-    <li><strong>Your wardrobe is backed up to the cloud</strong>, tied to your account, so it appears on every device you sign in on.</li>
-    <li><strong>No ads and no tracking across apps or websites.</strong></li>
-    <li>To improve the App we record which features you use and error/crash reports, using our own infrastructure and two service providers, PostHog (product analytics) and Sentry (crash reporting). You can turn both off in Settings.</li>
-    <li>You can delete your account and all your data at any time from inside the App.</li>
-  </ul>
+<p>Fitly is an AI styling app for managing your wardrobe and outfits. You need an account; your wardrobe data is backed up in the cloud tied to that account and appears on every device you sign in on. On the free plan you can optionally watch a rewarded ad to earn a try-on; ads are served by Google AdMob. Premium subscribers see no ads. You manage the Premium subscription through the App Store or Google Play. To improve the app we use two more service providers: product analytics (PostHog) and error/crash reporting (Sentry); both can be turned off in Settings. You can delete all your data at any time from inside the app by deleting your account.</p>
 
-  <h2>Data we process</h2>
-  <ul>
-    <li><strong>Email address</strong> — account creation and sign-in. Stored in Supabase (EU — Frankfurt). Linked to you.</li>
-    <li><strong>User ID</strong> — identifies your account so only you see your data. Supabase (EU). Linked to you.</li>
-    <li><strong>Name (optional)</strong> — only when signing in with Google/Apple and only if the provider shares it. Supabase (EU). Linked to you.</li>
-    <li><strong>Wardrobe content</strong> — clothing photos, garment attributes (category, colour, fabric, etc.), outfits, outfit calendar and style preferences, for cross-device backup and sync. Supabase Postgres + Storage (EU). Linked to you.</li>
-    <li><strong>Body profile (if entered)</strong> — gender, height, weight, body type, measurements, for more accurate suggestions and sync. Supabase (EU). Linked to you.</li>
-    <li><strong>Clothing photos — AI analysis</strong> — garment recognition and outfit suggestions. Sent through our HTTPS proxy to the Gemini model on Google Cloud Vertex AI for <strong>one-time</strong> analysis; not stored on our servers for analysis and never used for ads or profiling.</li>
-    <li><strong>Model try-on (optional)</strong> — when you tap “Try on model”, the photos of the outfit’s pieces and a stock model photo (not your photo) are sent through our HTTPS proxy to Google Cloud Vertex AI (Gemini image model) to create one image. The result is stored <strong>only on your device</strong> (and with the outfit if you save it); we keep only a usage record (account ID, time, result code) to apply the daily limit.</li>
-    <li><strong>Quests, daily streak and invites</strong> — the days you open the App, quest rewards, your invite code and who joined with it are stored in Supabase (EU) to grant try-on rewards. Inviters see only counts, never who joined.</li>
-    <li><strong>Background removal (optional)</strong> — if you choose “Remove background” when adding a piece, the background is removed <strong>on your device</strong> (iOS: Apple Vision, Android: Google ML Kit). The photo does not leave your device for this.</li>
-    <li><strong>Approximate location (optional)</strong> — used only to fetch local weather. Not stored; you can choose the weather manually instead.</li>
-    <li><strong>Usage data (can be turned off)</strong> — which features you use (e.g. opening the App, adding an item, generating or saving an outfit, an AI analysis failing), short labels (e.g. outfit occasion), app version, platform, language and your account ID. Used to understand which features are used and where problems occur, so we can improve the App. Contains <strong>no</strong> photos, item names or descriptions, free text, email or location, and no session recording. Supabase (EU) and PostHog (USA). Linked to you.</li>
-    <li><strong>Error and crash data (can be turned off)</strong> — error message and stack trace, app version, device model and OS version, current screen name and your account ID. Used to find and fix errors and crashes. <strong>No</strong> photos, screenshots, email or IP address are sent. Sentry (USA). Linked to you.</li>
-    <li><strong>Feedback messages (optional)</strong> — the text you write in <strong>Settings → Send feedback</strong>, its type (idea / bug / other), app version, platform, language and your account ID. Your email is used to reply only if you choose “You can reply to me by email”. Supabase (EU). Linked to you.</li>
-    <li><strong>AI usage log</strong> — for each AI call: your account ID, model, token count, duration and result code. Used to monitor AI cost, prevent abuse and apply a daily usage limit. Request and response content (photos, text) is <strong>not</strong> stored. Supabase (EU). Linked to you.</li>
-  </ul>
+<h2>What we process</h2>
 
-  <h2>What we do not do</h2>
-  <ul>
-    <li>No ads and no advertising identifier.</li>
-    <li>No advertising or tracking SDKs, and no tracking across apps and websites. Usage and error data is shared only with the service providers below, solely to process it on our behalf.</li>
-    <li>We do not sell your data or share it for advertising or profiling.</li>
-    <li>We do not use your photos to train AI models.</li>
-  </ul>
+<ul>
+  <li><strong>Email address</strong><br>Account creation and sign-in (Google, Apple, or email/password)<br><em>Where stored:</em> Supabase (EU — Frankfurt) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>User ID</strong><br>Identify your account, show only your data to you<br><em>Where stored:</em> Supabase (EU) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Name (optional)</strong><br>Only when signing in with Google/Apple and only if the provider shares it<br><em>Where stored:</em> Supabase (EU) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Wardrobe content:</strong> clothing photos, garment attributes, outfits, outfit calendar, style preferences<br>Cross-device backup and sync<br><em>Where stored:</em> Supabase Postgres + Storage (EU) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Body profile:</strong> gender, height, weight, body type, measurements (if entered)<br>More accurate outfit suggestions; sync<br><em>Where stored:</em> Supabase (EU) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Clothing photos — AI analysis</strong><br>Garment recognition and outfit suggestions. Sent through our HTTPS proxy to the Gemini model on Google Cloud Vertex AI for <strong>one-time</strong> analysis; not stored on our servers for analysis, never used for ads or profiling<br><em>Where stored:</em> Google Cloud Vertex AI (at processing time, not persisted) · <em>Linked to you?:</em> No</li>
+  <li><strong>Body summary for outfit suggestions (optional, separate consent)</strong><br>Only if you explicitly allow it: a proportional summary derived from your body type and the measurements you entered (e.g. shoulder–hip balance, waist definition). Height, weight and raw measurements are not sent. Used to judge fit when ranking outfits<br><em>Where stored:</em> Google Cloud Vertex AI (at processing time, not persisted) · <em>Linked to you?:</em> No</li>
+  <li><strong>Model try-on (optional)</strong><br>When you tap "Try on model", the outfit's piece photos and the model image (your personal model if you have one, otherwise a stock model) go through our HTTPS proxy to the Gemini image model on Vertex AI to create one image. The result is stored only on your device (and with the outfit if you save it)<br><em>Where stored:</em> Google Cloud Vertex AI (at processing time, not persisted) · <em>Linked to you?:</em> No</li>
+  <li><strong>Profile photo and personal model (optional, separate consent)</strong><br>Your profile photo and your height, weight, body type and measurements are sent through our HTTPS proxy to the Gemini image model on Vertex AI to create a model image only for you. The generated model image is used for try-on. Your profile photo and model image are kept in Supabase Storage (EU) in a folder tied to your account<br><em>Where stored:</em> Google Cloud Vertex AI (at processing time, not persisted); Supabase (EU) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Rewarded ad (optional)</strong><br>If you watch an ad to earn a try-on: a one-time record that the ad was completed and your account ID, so the credit can be granted. Google AdMob processes device and app information to show the ad. The advertising identifier (IDFA) is used only if you allow tracking on iOS<br><em>Where stored:</em> Supabase (EU); Google AdMob (USA and other countries) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Subscription status (Premium)</strong><br>To unlock Premium features and restore purchases: product ID, expiry date and App Store / Google Play transaction ID. Payment card details are <strong>not</strong> sent to us; payment is handled by the App Store or Google Play<br><em>Where stored:</em> Supabase (EU) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Quests, daily streak, invites</strong><br>Days you open the app, quest rewards, your invite code and who joined with it; used to grant try-on rewards. Inviters only see counts<br><em>Where stored:</em> Supabase (EU) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Background removal (optional)</strong><br>If you choose "Remove background" when adding a piece, the background is removed <strong>on your device</strong> (iOS: Apple Vision, Android: Google ML Kit); the photo does not leave your device for this<br><em>Where stored:</em> On device · <em>Linked to you?:</em> —</li>
+  <li><strong>Approximate location (optional)</strong><br>Weather-appropriate outfit suggestions only. Not stored; you can pick the weather manually instead<br><em>Where stored:</em> On device, transient · <em>Linked to you?:</em> No</li>
+  <li><strong>Usage data (can be turned off):</strong> which features you use (e.g. opening the app, adding an item, generating/saving an outfit, an AI analysis failing), short labels (e.g. outfit occasion), app version, platform, language and account ID<br>Understand which features are used and where problems occur, to improve the app. Contains <strong>no</strong> photos, item names/descriptions, free text, email or location; no session recording<br><em>Where stored:</em> Supabase (EU) and PostHog (US) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Error and crash data (can be turned off):</strong> error message and stack trace, app version, device model and OS version, current screen name, account ID<br>Find and fix errors and crashes. <strong>No</strong> photos, screenshots, email or IP address are sent<br><em>Where stored:</em> Sentry (US) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>Feedback messages (optional):</strong> the text you write in Settings → Send feedback, its type (idea/bug/other), app version, platform, language and account ID; your email is used to reply only if you choose "You can reply to me by email"<br>Read suggestions and bug reports to improve the app, and reply if you asked<br><em>Where stored:</em> Supabase (EU) · <em>Linked to you?:</em> Yes</li>
+  <li><strong>AI usage log:</strong> for each AI call, your account ID, model, token count, duration and result code<br>Monitor AI cost, prevent abuse and apply a daily usage limit. Request and response content (photos, text) is <strong>not</strong> stored<br><em>Where stored:</em> Supabase (EU) · <em>Linked to you?:</em> Yes</li>
+</ul>
 
-  <h2>Service providers</h2>
-  <ul>
-    <li><strong>Supabase</strong> — authentication, database and file storage. Region: EU (Frankfurt). <a href="https://supabase.com/privacy">Supabase Privacy Policy</a></li>
-    <li><strong>Google Cloud Vertex AI</strong> (Google LLC) — one-time analysis of clothing photos you submit (Gemini model). Google Cloud terms apply; these requests are not used for model training. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-    <li><strong>PostHog</strong> (PostHog Inc., USA) — product analytics: usage events, with your account ID. IP addresses are discarded; session recording and surveys are off. <a href="https://posthog.com/privacy">PostHog Privacy Policy</a></li>
-    <li><strong>Sentry</strong> (Functional Software Inc., USA) — error and crash reports, relayed through our own server so your IP address is not sent to Sentry. <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a></li>
-    <li><strong>Transfers to the USA:</strong> PostHog and Sentry data is processed in the USA, based on the providers’ data processing agreements with Standard Contractual Clauses (SCCs).</li>
-    <li><strong>Google Sign-In / Sign in with Apple</strong> — only if you choose that method, only for authentication.</li>
-  </ul>
+<p><strong>Turning off usage data:</strong> In the app, turn off <strong>Settings → Share usage data</strong> and that device stops sending usage events and error/crash reports (to Supabase, PostHog and Sentry alike). The AI usage log is required to operate the service safely and sustainably and cannot be turned off.</p>
 
-  <h2>Your choices</h2>
-  <ul>
-    <li><strong>Usage and error data:</strong> turn off <strong>Settings → Share usage data</strong> in the App and that device stops sending usage events and error/crash reports (to Supabase, PostHog and Sentry alike). The AI usage log is required to operate the service safely and sustainably and cannot be turned off.</li>
-    <li>Camera, photo and location permissions can be granted or revoked anytime in your device Settings.</li>
-    <li>You can delete any clothing item or outfit in the App.</li>
-  </ul>
+<h2>Ads and tracking</h2>
 
-  <h2>Retention &amp; deletion</h2>
-  <p>Your wardrobe data and account are kept until you delete them. In the App,
-  <strong>Profile → Account → Delete account</strong> permanently deletes your
-  account and all cloud data, including photos. Deleting your account also
-  deletes your usage data; your account ID is removed from AI usage records,
-  which remain only as anonymous statistics (model, token count, date). Feedback
-  messages are deleted with your account. Error reports in Sentry are kept for
-  30 days and usage events in PostHog for up to 12 months; you can also ask us to
-  delete these records at the address below. Signing out keeps your cloud data
-  and clears the local copy on that device.</p>
+<ul>
+  <li>Free users see ads only as an <strong>optional rewarded ad</strong>: it opens when you choose to watch it, and if you watch it to the end you earn a try-on. A limited number of rewards is granted per day.</li>
+  <li><strong>Premium subscribers see no ads.</strong></li>
+  <li><strong>iOS:</strong> the app asks for permission to personalize ads (App Tracking Transparency). If you decline, the advertising identifier is not used and ads are shown without personalization.</li>
+  <li><strong>EU, UK and similar regions:</strong> Google's consent form (consent to personalized ads) is shown; you can change your choice at any time.</li>
+</ul>
 
-  <h2>Security</h2>
-  <p>All network traffic is encrypted with TLS. The database enforces Row Level
-  Security: each record can be read or written only by the account that created
-  it. To understand how the App is used, the developer sees only aggregate
-  counts (e.g. number of users, items per category) and the feedback messages
-  you choose to send; photos, item names and descriptions in your wardrobe are
-  not part of that view.</p>
+<h2>What we do not do</h2>
 
-  <h2>Children</h2>
-  <p>Fitly is not directed to children under 13 (16 in the EU) and does not
-  knowingly collect data from anyone under that age.</p>
+<ul>
+  <li>Premium subscribers do not see ads; free users see ads only in the optional rewarded format described above.</li>
+  <li>We use no advertising SDK other than Google AdMob, and no tracking SDKs; no tracking across apps and websites. Usage and error data is shared only with the service providers below, solely to process it on our behalf.</li>
+  <li>We do not sell your data or share it for advertising or profiling.</li>
+  <li>We do not use your photos to train AI models.</li>
+</ul>
 
-  <h2>Changes</h2>
-  <p>We may update this policy as the App evolves. The “Last updated” date above
-  reflects the latest version.</p>
+<h2>Service providers (processors)</h2>
 
-  <h2>Contact</h2>
-  <p>For access, correction, deletion or portability requests, or any privacy
-  question, email
-  <a href="mailto:steinmax16@gmail.com">steinmax16@gmail.com</a>.</p>
+<ul>
+  <li><strong>Supabase</strong> — authentication, database and file storage. Region: EU (Frankfurt). Your data is hosted in the EU.</li>
+  <li><strong>Google Cloud Vertex AI</strong> (Google LLC) — one-time analysis of clothing photos you submit, generation of your personal model from your profile photo and your height, weight, body type and measurements (Gemini model), and try-on requests. The endpoint is <strong>global</strong>: processing may take place in the USA and other countries. Google Cloud terms apply; these requests are not used for model training.</li>
+  <li><strong>Google AdMob</strong> (Google LLC) — display and measurement of rewarded ads. See "Ads and tracking".</li>
+  <li><strong>Apple App Store and Google Play</strong> — purchase, renewal and restoration of the Premium subscription. Only these stores process your payment information.</li>
+  <li><strong>PostHog</strong> (PostHog Inc., USA) — product analytics: usage events, with your account ID. IP addresses are discarded; session recording and surveys are off.</li>
+  <li><strong>Sentry</strong> (Functional Software Inc., USA) — error and crash reports. Reports are relayed through our own server; your IP address is not sent to Sentry.</li>
+  <li><strong>Transfers abroad:</strong> PostHog and Sentry data is processed in the USA; Google AdMob and Vertex AI (global endpoint) data is processed in the USA and other countries. Apple and Google process subscription transactions on their own infrastructure. These transfers rely on the providers' data processing agreements with Standard Contractual Clauses (SCCs); the processing of your photos and body data with AI also relies on the explicit consent you give in the app.</li>
+  <li><strong>Google Sign-In / Sign in with Apple</strong> — only if you choose that method, only for authentication.</li>
+</ul>
+
+<h2>Data controller and your rights (KVKK / GDPR)</h2>
+
+<p>Data controller: <strong>Emirhan Ekici</strong> (individual). Contact: <strong>steinmax16@gmail.com</strong>.</p>
+
+<p>We process your personal data on the following bases: performance of the contract and providing the service (account and sync); security, error handling and product improvement (legitimate interests); processing of your photos and body data with AI, and ad personalization (explicit consent); and legal obligations (e.g. AI cost records).</p>
+
+<p>Under Turkey's Law No. 6698 (KVKK, Article 11) and, where applicable, the GDPR, you can ask whether your data is processed, request information about the processing, its purpose and the recipients (domestic or abroad), request correction, erasure or restriction, object to processing and to automated decisions that affect you, claim compensation for damage, and withdraw consent at any time. Send requests to the address above; we respond within 30 days. You may also lodge a complaint with the Turkish Personal Data Protection Authority or your national data protection authority.</p>
+
+<h2>Retention and deletion</h2>
+
+<p>Your wardrobe data and account are kept until you delete them. In the app, <strong>Profile → Account → Delete account</strong> permanently deletes your account and all cloud data (including photos, your profile photo and your personal model). Signing out keeps cloud data and clears the local copy on that device. Deleting your account also deletes your usage data; your account ID is removed from AI usage records, which remain only as anonymous statistics (model, token count, date). Feedback messages are deleted with your account. Your Premium subscription records (product ID, expiry date, transaction ID) are deleted with your account; you manage billing and renewal in the App Store / Google Play settings. Error reports in Sentry are kept for 30 days and usage events in PostHog for up to 12 months; when you delete your account you can also ask us to delete these records at the address below. The ad provider's own retention periods are governed by Google's policies.</p>
+
+<h2>Security</h2>
+
+<p>All network traffic is encrypted with TLS. The database enforces Row Level Security: each record can be read/written only by the account that created it. To understand how the app is used, the developer sees only aggregate counts (e.g. number of users, items per category) and the feedback messages you choose to send. For support and error investigation, the developer may view an account's photos (wardrobe, profile and model) only when needed; every view is logged and links are valid for 10 minutes. Item names and descriptions are not part of that view.</p>
+
+<h2>Children</h2>
+
+<p>Fitly is not directed to children under 13 (16 in the EU) and does not knowingly collect data from anyone under that age.</p>
+
+<h2>Exercising your rights</h2>
+
+<p>For access, correction, deletion, or portability requests: <strong>steinmax16@gmail.com</strong></p>
 
   <hr class="divider">
 
   <h1 id="tr" lang="tr">Fitly — Gizlilik Politikası</h1>
-  <div lang="tr">
-  <p class="muted">Son güncelleme: 24 Ekim 2026</p>
+  <p class="muted">Son güncelleme: 1 Kasım 2026</p>
 
-  <p>Fitly, gardırobunu ve kombinlerini yönetmen için bir yapay zekâ stil
-  uygulamasıdır. Bu politika hangi verileri neden işlediğimizi ve bunları nasıl
-  kontrol edebileceğini anlatır.</p>
+<h2>Kısaca</h2>
 
-  <h2>Kısaca</h2>
-  <ul>
-    <li><strong>Hesap gereklidir.</strong> Google, Apple ile Giriş veya e-posta/şifre ile giriş yaparsın.</li>
-    <li><strong>Gardırobun hesabına bağlı olarak bulutta yedeklenir</strong> ve giriş yaptığın her cihazda görünür.</li>
-    <li><strong>Reklam yok, uygulamalar ve siteler arası takip yok.</strong></li>
-    <li>Uygulamayı geliştirmek için hangi özellikleri kullandığını ve hata/çökme raporlarını kendi altyapımızda ve iki hizmet sağlayıcıyla, PostHog (ürün analitiği) ve Sentry (çökme raporu) ile kaydederiz. İkisini de Ayarlar'dan kapatabilirsin.</li>
-    <li>Hesabını ve tüm verini istediğin an uygulama içinden silebilirsin.</li>
-  </ul>
+<p>Fitly, gardırobunu ve kombinlerini yönetmen için bir yapay zekâ stil uygulamasıdır. Bir hesap oluşturman gerekir; gardırop verin bu hesaba bağlı olarak bulutta yedeklenir ve giriş yaptığın her cihazda görünür. Ücretsiz kullanımda, model giydirme hakkı kazanmak için isteğe bağlı ödüllü reklam izleyebilirsin; reklamları Google AdMob gösterir. Premium abonelikte reklam gösterilmez. Premium aboneliği App Store veya Google Play üzerinden yönetirsin. Uygulamayı geliştirmek için iki hizmet sağlayıcı daha kullanırız: ürün analitiği (PostHog) ve hata/çökme raporu (Sentry); ikisi de Ayarlar'dan kapatılabilir. Verini istediğin an uygulama içinden hesabını silerek tamamen kaldırabilirsin.</p>
 
-  <h2>Hangi verileri işliyoruz?</h2>
-  <ul>
-    <li><strong>E-posta adresi</strong> — hesap oluşturma ve giriş. Supabase (AB — Frankfurt). Kimliğine bağlı.</li>
-    <li><strong>Kullanıcı kimliği</strong> — hesabını tanımlamak, verini yalnızca sana göstermek. Supabase (AB). Kimliğine bağlı.</li>
-    <li><strong>Ad (opsiyonel)</strong> — yalnızca Google/Apple ile girişte ve sağlayıcı paylaşırsa. Supabase (AB). Kimliğine bağlı.</li>
-    <li><strong>Gardırop içeriği</strong> — kıyafet fotoğrafları, kıyafet bilgileri (kategori, renk, kumaş vb.), kombinler, kombin takvimi ve stil tercihleri; cihazlar arası yedek ve senkron için. Supabase Postgres + Storage (AB). Kimliğine bağlı.</li>
-    <li><strong>Vücut profili (girdiysen)</strong> — cinsiyet, boy, kilo, vücut tipi, ölçüler; daha isabetli öneri ve senkron için. Supabase (AB). Kimliğine bağlı.</li>
-    <li><strong>Kıyafet fotoğrafları — AI analizi</strong> — kıyafet tanıma ve kombin önerisi. Fotoğraf, HTTPS proxy'miz üzerinden Google Cloud Vertex AI'daki Gemini modeline <strong>tek seferlik</strong> analiz için iletilir; sunucularımızda analiz amacıyla saklanmaz, reklam veya profil için kullanılmaz.</li>
-    <li><strong>Modele giydirme (opsiyonel)</strong> — “Modele giydir”e dokunduğunda kombindeki parçaların fotoğrafları ve hazır bir model fotoğrafı (senin fotoğrafın değil) HTTPS proxy'miz üzerinden Google Cloud Vertex AI'daki Gemini görsel modeline tek görsel üretmek için iletilir. Sonuç <strong>yalnızca cihazında</strong> (kaydedersen kombinle birlikte) saklanır; günlük sınır için yalnızca kullanım kaydı (hesap kimliği, zaman, sonuç kodu) tutarız.</li>
-    <li><strong>Görevler, günlük seri ve davet</strong> — uygulamayı açtığın günler, görev ödülleri, davet kodun ve kodunla katılanlar model giydirme hakkı vermek için Supabase'de (AB) saklanır. Davet eden yalnızca sayıyı görür, kimin katıldığını görmez.</li>
-    <li><strong>Arka plan kaldırma (opsiyonel)</strong> — eklerken “Arka planı kaldır” seçersen arka plan <strong>cihazında</strong> kaldırılır (iOS: Apple Vision, Android: Google ML Kit). Fotoğraf bu işlem için cihazdan çıkmaz.</li>
-    <li><strong>Yaklaşık konum (opsiyonel)</strong> — yalnızca hava durumu için. Saklanmaz; havayı elle de seçebilirsin.</li>
-    <li><strong>Kullanım verisi (kapatılabilir)</strong> — hangi özelliği kullandığın (ör. uygulamayı açma, parça ekleme, kombin oluşturma/kaydetme, AI analizinin başarısız olması), kısa etiketler (ör. kombin durumu), uygulama sürümü, platform, dil ve hesap kimliği. Hangi özelliklerin kullanıldığını ve nerede sorun yaşandığını anlayıp uygulamayı geliştirmek için. Fotoğraf, parça adı/açıklaması, serbest metin, e-posta veya konum <strong>içermez</strong>; ekran kaydı yapılmaz. Supabase (AB) ve PostHog (ABD). Kimliğine bağlı.</li>
-    <li><strong>Hata ve çökme verisi (kapatılabilir)</strong> — hata mesajı ve yığın izi, uygulama sürümü, cihaz modeli ve işletim sistemi sürümü, açık ekranın adı ve hesap kimliği. Hataları ve çökmeleri bulup düzeltmek için. Fotoğraf, ekran görüntüsü, e-posta veya IP adresi <strong>gönderilmez</strong>. Sentry (ABD). Kimliğine bağlı.</li>
-    <li><strong>Geri bildirim mesajları (isteğe bağlı)</strong> — <strong>Ayarlar → Geri bildirim gönder</strong> ile yazdığın metin, türü (öneri / hata / diğer), uygulama sürümü, platform, dil ve hesap kimliği. E-posta adresin yalnızca “Bana e-postayla dönebilirsiniz” seçersen yanıt için kullanılır. Supabase (AB). Kimliğine bağlı.</li>
-    <li><strong>AI kullanım kaydı</strong> — her AI çağrısı için hesap kimliği, model, token sayısı, süre ve sonuç kodu. AI maliyetini izlemek, kötüye kullanımı önlemek ve günlük kullanım sınırı uygulamak için. İstek ve yanıt içeriği (fotoğraf, metin) <strong>saklanmaz</strong>. Supabase (AB). Kimliğine bağlı.</li>
-  </ul>
+<h2>Hangi verileri işliyoruz?</h2>
 
-  <h2>Ne yapmıyoruz?</h2>
-  <ul>
-    <li>Reklam göstermiyoruz, reklam kimliği kullanmıyoruz.</li>
-    <li>Reklam veya takip amaçlı SDK içermiyoruz; uygulamalar ve siteler arası takip yapmıyoruz. Kullanım ve hata verisi yalnızca aşağıdaki hizmet sağlayıcılarla, yalnızca bizim adımıza işlenmek üzere paylaşılır.</li>
-    <li>Verini satmıyoruz, reklam veya profilleme için paylaşmıyoruz.</li>
-    <li>Fotoğraflarını yapay zekâ modeli eğitmek için kullanmıyoruz.</li>
-  </ul>
+<ul>
+  <li><strong>E-posta adresi</strong><br>Hesap oluşturma ve giriş (Google, Apple veya e-posta/şifre)<br><em>Nerede saklanır:</em> Supabase (AB — Frankfurt) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Kullanıcı kimliği</strong><br>Hesabını tanımlamak, verini yalnızca sana göstermek<br><em>Nerede saklanır:</em> Supabase (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Ad (opsiyonel)</strong><br>Yalnızca Google/Apple ile girişte ve sağlayıcı paylaşırsa<br><em>Nerede saklanır:</em> Supabase (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Gardırop içeriği:</strong> kıyafet fotoğrafları, kıyafet bilgileri (kategori, renk, kumaş vb.), kombinler, kombin takvimi, stil tercihleri<br>Cihazlar arası yedek ve senkron<br><em>Nerede saklanır:</em> Supabase Postgres + Storage (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Vücut profili:</strong> cinsiyet, boy, kilo, vücut tipi, ölçüler (girdiysen)<br>Daha isabetli kombin önerisi; senkron<br><em>Nerede saklanır:</em> Supabase (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Kıyafet fotoğrafları — AI analizi</strong><br>Kıyafet tanıma ve kombin önerisi. Fotoğraf, HTTPS proxy'miz üzerinden Google Cloud Vertex AI'daki Gemini modeline <strong>tek seferlik</strong> analiz için iletilir; sunucularımızda analiz amacıyla saklanmaz, reklam/profil için kullanılmaz<br><em>Nerede saklanır:</em> Google Cloud Vertex AI (işleme anında, kalıcı değil) · <em>Kimliğe bağlı mı?:</em> Hayır</li>
+  <li><strong>Kombin önerisi için vücut özeti (opsiyonel, ayrı onay)</strong><br>Yalnızca açıkça izin verirsen: vücut tipinden ve girdiğin ölçülerden çıkarılan oransal bir özet (ör. omuz–kalça dengesi, bel belirginliği). Boy, kilo ve ham ölçüler gönderilmez. Kombin sıralamasında uyumu değerlendirmek için kullanılır<br><em>Nerede saklanır:</em> Google Cloud Vertex AI (işleme anında, kalıcı değil) · <em>Kimliğe bağlı mı?:</em> Hayır</li>
+  <li><strong>Modele giydirme (opsiyonel)</strong><br>"Modele giydir"e dokununca kombindeki parçaların fotoğrafları ve model görseli (kişisel modelin varsa o, yoksa hazır bir model) HTTPS proxy'miz üzerinden Vertex AI'daki Gemini görsel modeline tek görsel üretmek için iletilir. Sonuç yalnızca cihazında (kaydedersen kombinle) saklanır<br><em>Nerede saklanır:</em> Google Cloud Vertex AI (işleme anında, kalıcı değil) · <em>Kimliğe bağlı mı?:</em> Hayır</li>
+  <li><strong>Profil fotoğrafı ve kişisel model (opsiyonel, ayrı onay)</strong><br>Profil fotoğrafın (eklersen) ile boy, kilo, vücut tipin ve girdiğin ölçülerin, yalnızca sana özel bir model görseli üretmek için HTTPS proxy'miz üzerinden Vertex AI'daki Gemini görsel modeline iletilir. Üretilen model görseli, kombinlerde giydirme için kullanılır. Profil fotoğrafın ve model görselin Supabase Storage'da (AB) hesabına bağlı klasörde tutulur<br><em>Nerede saklanır:</em> Google Cloud Vertex AI (işleme anında, kalıcı değil); Supabase (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Ödüllü reklam (opsiyonel)</strong><br>Giydirme hakkı kazanmak için reklam izlersen: reklamın tamamlandığına dair tek kullanımlık kayıt ve hesap kimliğin, kredinin verilmesi için. Reklamın gösterilmesi için Google AdMob cihaz ve uygulama bilgilerini işler. Reklam kimliği (IDFA) yalnızca iOS'te izin verirsen kullanılır<br><em>Nerede saklanır:</em> Supabase (AB); Google AdMob (ABD ve diğer ülkeler) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Abonelik durumu (Premium)</strong><br>Premium özelliklerini açmak ve satın alımı geri yüklemek için: ürün kimliği, bitiş tarihi ve App Store / Google Play işlem kimliği. Ödeme kartı bilgisi bize <strong>gelmez</strong>; ödeme App Store veya Google Play tarafından yapılır<br><em>Nerede saklanır:</em> Supabase (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Görevler, günlük seri, davet</strong><br>Açtığın günler, görev ödülleri, davet kodun ve kodunla katılanlar; model giydirme hakkı vermek için. Davet eden yalnızca sayıyı görür<br><em>Nerede saklanır:</em> Supabase (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Arka plan kaldırma (opsiyonel)</strong><br>Eklerken "Arka planı kaldır" seçersen fotoğrafın arka planı <strong>cihazında</strong> (iOS: Apple Vision, Android: Google ML Kit) kaldırılır; fotoğraf bu işlem için cihazdan çıkmaz<br><em>Nerede saklanır:</em> Cihazda · <em>Kimliğe bağlı mı?:</em> —</li>
+  <li><strong>Yaklaşık konum (opsiyonel)</strong><br>Yalnızca hava durumuna uygun kombin önerisi. Saklanmaz; istemezsen havayı elle seçebilirsin<br><em>Nerede saklanır:</em> Cihazda, anlık · <em>Kimliğe bağlı mı?:</em> Hayır</li>
+  <li><strong>Kullanım verisi (kapatılabilir):</strong> hangi özelliği kullandığın (ör. uygulamayı açma, parça ekleme, kombin oluşturma/kaydetme, AI analizinin başarısız olması), kısa etiketler (ör. kombin durumu), uygulama sürümü, platform, dil ve hesap kimliği<br>Hangi özelliklerin kullanıldığını ve nerede sorun yaşandığını anlayıp uygulamayı geliştirmek. Fotoğraf, parça adı/açıklaması, serbest metin, e-posta veya konum <strong>içermez</strong>; ekran kaydı yapılmaz<br><em>Nerede saklanır:</em> Supabase (AB) ve PostHog (ABD) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Hata ve çökme verisi (kapatılabilir):</strong> hata mesajı ve yığın izi, uygulama sürümü, cihaz modeli ve işletim sistemi sürümü, açık ekranın adı, hesap kimliği<br>Hataları ve çökmeleri bulup düzeltmek. Fotoğraf, ekran görüntüsü, e-posta veya IP adresi <strong>gönderilmez</strong><br><em>Nerede saklanır:</em> Sentry (ABD) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>Geri bildirim mesajları (isteğe bağlı):</strong> Ayarlar → Geri bildirim gönder ile yazdığın metin, türü (öneri/hata/diğer), uygulama sürümü, platform, dil ve hesap kimliği; e-posta adresin yalnızca "bana dönebilirsiniz" seçersen yanıt için kullanılır<br>Önerileri ve hataları okuyup uygulamayı geliştirmek, istersen sana dönmek<br><em>Nerede saklanır:</em> Supabase (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+  <li><strong>AI kullanım kaydı:</strong> her AI çağrısı için hesap kimliği, model, token sayısı, süre ve sonuç kodu<br>AI maliyetini izlemek, kötüye kullanımı önlemek ve günlük kullanım sınırı uygulamak. İstek ve yanıt içeriği (fotoğraf, metin) <strong>saklanmaz</strong><br><em>Nerede saklanır:</em> Supabase (AB) · <em>Kimliğe bağlı mı?:</em> Evet</li>
+</ul>
 
-  <h2>Hizmet sağlayıcılar</h2>
-  <ul>
-    <li><strong>Supabase</strong> — kimlik doğrulama, veritabanı ve dosya depolama. Bölge: AB (Frankfurt).</li>
-    <li><strong>Google Cloud Vertex AI</strong> (Google LLC) — gönderdiğin kıyafet fotoğraflarının tek seferlik analizi (Gemini modeli). Google Cloud şartları geçerlidir; bu istekler model eğitimi için kullanılmaz.</li>
-    <li><strong>PostHog</strong> (PostHog Inc., ABD) — ürün analitiği: kullanım olayları, hesap kimliğiyle. IP adresleri atılır; ekran kaydı ve anket kapalıdır.</li>
-    <li><strong>Sentry</strong> (Functional Software Inc., ABD) — hata ve çökme raporları; kendi sunucumuz üzerinden iletilir, IP adresin Sentry'ye gönderilmez.</li>
-    <li><strong>ABD'ye aktarım:</strong> PostHog ve Sentry verileri ABD'de işlenir. Bu aktarım, sağlayıcıların standart sözleşme maddeleri (SCC) içeren veri işleme sözleşmelerine dayanır.</li>
-    <li><strong>Google ile Giriş / Apple ile Giriş</strong> — yalnızca bu yöntemi seçersen, yalnızca kimlik doğrulama için.</li>
-  </ul>
+<p><strong>Kullanım verisini kapatma:</strong> Uygulamada <strong>Ayarlar → Kullanım verisi paylaş</strong> seçeneğini kapatırsan o cihazdan kullanım olayı ve hata/çökme raporu gönderilmez (Supabase, PostHog ve Sentry'nin hepsi için). AI kullanım kaydı, hizmetin güvenli ve sürdürülebilir çalışması için gereklidir ve kapatılamaz.</p>
 
-  <h2>Seçeneklerin</h2>
-  <ul>
-    <li><strong>Kullanım ve hata verisi:</strong> uygulamada <strong>Ayarlar → Kullanım verisi paylaş</strong> seçeneğini kapatırsan o cihazdan kullanım olayı ve hata/çökme raporu gönderilmez (Supabase, PostHog ve Sentry'nin hepsi için). AI kullanım kaydı, hizmetin güvenli ve sürdürülebilir çalışması için gereklidir ve kapatılamaz.</li>
-    <li>Kamera, fotoğraf ve konum izinlerini cihaz Ayarlar'ından istediğin an verip geri alabilirsin.</li>
-    <li>Uygulamada herhangi bir kıyafeti veya kombini silebilirsin.</li>
-  </ul>
+<h2>Reklamlar ve takip</h2>
 
-  <h2>Saklama ve silme</h2>
-  <p>Gardırop verin ve hesabın sen silene kadar saklanır. Uygulamada
-  <strong>Profil → Hesap → Hesabı sil</strong> ile hesabını ve buluttaki tüm
-  verini (fotoğraflar dahil) kalıcı olarak silebilirsin. Hesabını sildiğinde
-  kullanım verin de silinir; AI kullanım kayıtlarındaki hesap kimliği kaldırılır
-  ve kayıtlar yalnızca kimliksiz istatistik (model, token sayısı, tarih) olarak
-  kalır. Geri bildirim mesajların hesabınla birlikte silinir. Sentry'deki hata
-  raporları 30 gün, PostHog'daki kullanım olayları en fazla 12 ay saklanır; bu
-  kayıtların silinmesini aşağıdaki adresten de isteyebilirsin. Çıkış yaptığında buluttaki veri korunur, cihazdaki yerel kopya
-  temizlenir.</p>
+<ul>
+  <li>Ücretsiz kullanıcılara reklam yalnızca <strong>isteğe bağlı ödüllü reklam</strong> olarak gösterilir: sen izlemeyi seçtiğinde açılır ve reklamı sonuna kadar izlersen giydirme hakkı kazanırsın. Reklamlar günde en fazla sınırlı sayıda verilir.</li>
+  <li><strong>Premium kullanıcılara reklam gösterilmez.</strong></li>
+  <li><strong>iOS:</strong> Reklam kişiselleştirmesi için uygulama sana izin ister (App Tracking Transparency). İzin vermezsen reklam kimliği kullanılmaz ve reklamlar kişiselleştirilmeden gösterilir.</li>
+  <li><strong>AB, İngiltere ve benzeri bölgeler:</strong> Google'ın onay formu (kişiselleştirilmiş reklam için rıza) gösterilir; kararını istediğin zaman değiştirebilirsin.</li>
+</ul>
 
-  <h2>Güvenlik</h2>
-  <p>Tüm ağ trafiği TLS ile şifrelenir. Veritabanında satır düzeyi güvenlik
-  (Row Level Security) uygulanır: her kayıt yalnızca onu oluşturan hesap
-  tarafından okunabilir/yazılabilir. Geliştirici, uygulamanın nasıl
-  kullanıldığını izlemek için yalnızca toplu sayılar (ör. kullanıcı sayısı,
-  kategori başına parça sayısı) ve senin göndermeyi seçtiğin geri bildirim
-  mesajlarını görür; gardırobundaki fotoğraflar, parça adları ve açıklamalar bu
-  görünüme dahil değildir.</p>
+<h2>Ne yapmıyoruz?</h2>
 
-  <h2>Çocuklar</h2>
-  <p>Fitly 13 yaşın (AB'de 16) altındaki kullanıcılara yönelik değildir ve
-  bilerek bu yaşın altından veri toplamaz.</p>
+<ul>
+  <li>Premium kullanıcılara reklam göstermiyoruz; ücretsiz kullanıcılara reklamı yalnızca yukarıdaki ödüllü reklam biçiminde gösteriyoruz.</li>
+  <li>Reklam amacıyla SDK kullanmıyoruz; Google AdMob dışında reklam veya takip amaçlı bir SDK içermiyoruz. Uygulamalar ve siteler arası takip (tracking) yapmıyoruz. Kullanım ve hata verisi yalnızca aşağıdaki hizmet sağlayıcılarla, yalnızca bizim adımıza işlenmek üzere paylaşılır.</li>
+  <li>Verini satmıyoruz, reklam veya profilleme için paylaşmıyoruz.</li>
+  <li>Fotoğraflarını yapay zekâ modeli eğitmek için kullanmıyoruz.</li>
+</ul>
 
-  <h2>Değişiklikler</h2>
-  <p>Bu politikayı uygulama geliştikçe güncelleyebiliriz. Yukarıdaki “Son
-  güncelleme” tarihi en son sürümü gösterir.</p>
+<h2>Hizmet sağlayıcılar (işleyenler)</h2>
 
-  <h2>İletişim</h2>
-  <p>Erişim, düzeltme, silme veya taşınabilirlik talepleri ya da gizlilikle
-  ilgili sorular için:
-  <a href="mailto:steinmax16@gmail.com">steinmax16@gmail.com</a>.</p>
-  </div>
+<ul>
+  <li><strong>Supabase</strong> — kimlik doğrulama, veritabanı ve dosya depolama. Bölge: AB (Frankfurt). Verilerin AB'de barındırılır.</li>
+  <li><strong>Google Cloud Vertex AI</strong> (Google LLC) — gönderdiğin kıyafet fotoğraflarının tek seferlik analizi, profil fotoğrafın (varsa) ile boy, kilo, vücut tipi ve ölçülerine dayanan kişisel modelin üretimi ve giydirme istekleri (Gemini modeli). Uç nokta <strong>global</strong>dir: işleme ABD ve diğer ülkelerde gerçekleşebilir. Google Cloud şartları geçerlidir; bu istekler model eğitimi için kullanılmaz.</li>
+  <li><strong>Google AdMob</strong> (Google LLC) — ödüllü reklamların gösterimi ve ölçümü. Bkz. "Reklamlar ve takip".</li>
+  <li><strong>Apple App Store ve Google Play</strong> — Premium aboneliğin satın alınması, yenilenmesi ve geri yüklenmesi. Ödeme bilgilerini yalnızca bu mağazalar işler.</li>
+  <li><strong>PostHog</strong> (PostHog Inc., ABD) — ürün analitiği: kullanım olayları, hesap kimliğiyle. IP adresleri atılır; ekran kaydı ve anket kapalıdır.</li>
+  <li><strong>Sentry</strong> (Functional Software Inc., ABD) — hata ve çökme raporları. Raporlar bizim sunucumuz üzerinden iletilir; IP adresin Sentry'ye gönderilmez.</li>
+  <li><strong>Yurt dışına aktarım:</strong> PostHog ve Sentry verileri ABD'de; Google AdMob ve Vertex AI (global uç nokta) verileri ABD ve diğer ülkelerde işlenir. Apple ve Google abonelik işlemlerini kendi altyapılarında yürütür. Bu aktarımlar, sağlayıcıların standart sözleşme maddeleri (SCC) içeren veri işleme sözleşmelerine dayanır; fotoğraf ve vücut verisinin yapay zekâ ile işlenmesi için uygulama içinde verdiğin açık rıza ayrıca alınır.</li>
+  <li><strong>Google Sign-In / Apple ile Giriş</strong> — yalnızca bu yöntemi seçersen, yalnızca kimlik doğrulama amacıyla.</li>
+</ul>
+
+<h2>Veri sorumlusu ve haklarını kullanma (KVKK)</h2>
+
+<p>Veri sorumlusu: <strong>Emirhan Ekici</strong> (gerçek kişi). İletişim: <strong>steinmax16@gmail.com</strong>.</p>
+
+<p>Kişisel verilerini, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 5. ve 6. maddelerinde belirtilen şartlar çerçevesinde; hesabının kurulması ve hizmetin sunulması (sözleşmenin ifası), güvenlik ile hata ve ürün iyileştirme (meşru menfaat), fotoğraf ve vücut verisinin yapay zekâ ile işlenmesi ve reklam kişiselleştirmesi (açık rıza) ve yasal yükümlülükler (ör. AI maliyet kayıtları) sebeplerine dayanarak işleriz.</p>
+
+<p>KVKK m.11 kapsamında; verilerinin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini isteme, silinmesini veya yok edilmesini isteme, aktarılan üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç doğurmasına itiraz etme ve zarar görmen hâlinde zararın giderilmesini talep etme haklarına sahipsin. Taleplerini yukarıdaki adrese iletebilirsin; en geç 30 gün içinde dönüş yapılır. Açık rızanı istediğin zaman geri alabilirsin.</p>
+
+<h2>Saklama ve silme</h2>
+
+<p>Gardırop verin ve hesabın, sen silene kadar saklanır. Uygulama içinde <strong>Profil → Hesap → Hesabı sil</strong> ile hesabını ve buluttaki tüm verini (gardırop fotoğrafların, profil fotoğrafın ve kişisel modelin dahil) kalıcı olarak silebilirsin. Çıkış yaptığında buluttaki veri korunur, cihazdaki yerel kopya temizlenir. Hesabını sildiğinde kullanım verin de silinir; AI kullanım kayıtlarındaki hesap kimliği kaldırılır ve kayıtlar yalnızca kimliksiz istatistik (model, token sayısı, tarih) olarak kalır. Geri bildirim mesajların hesabınla birlikte silinir. Premium abonelik kayıtların (ürün kimliği, bitiş tarihi, işlem kimliği) hesabınla birlikte silinir; abonelik ücretini ve yenilemeyi App Store / Google Play ayarlarından yönetebilirsin. Sentry'deki hata raporları 30 gün, PostHog'daki kullanım olayları en fazla 12 ay saklanır; hesabını sildiğinde bu kayıtların silinmesini de aşağıdaki adresten isteyebilirsin. Reklam sağlayıcısının kendi saklama süreleri Google'ın politikalarına tabidir.</p>
+
+<h2>Güvenlik</h2>
+
+<p>Tüm ağ trafiği TLS ile şifrelenir. Veritabanında satır düzeyi güvenlik (Row Level Security) uygulanır: her kayıt yalnızca onu oluşturan hesap tarafından okunabilir/yazılabilir. Uygulamanın geliştiricisi, uygulamanın nasıl kullanıldığını izlemek için yalnızca toplu sayılar (ör. kullanıcı sayısı, kategori başına parça sayısı) ve senin göndermeyi seçtiğin geri bildirim mesajlarını görür. Destek ve hata inceleme amacıyla geliştirici, bir hesabın fotoğraflarını (gardırop, profil ve model) yalnızca gerektiğinde görebilir; her görüntüleme kayıt altına alınır ve bağlantılar 10 dakika geçerlidir. Parça adları ve açıklamaları bu görünümde yer almaz.</p>
+
+<h2>Çocuklar</h2>
+
+<p>Fitly 13 yaşın (AB'de 16) altındaki kullanıcılara yönelik değildir ve bilerek bu yaşın altından veri toplamaz.</p>
+
+<h2>Haklarını kullanma</h2>
+
+<p>Erişim, düzeltme, silme veya taşınabilirlik talepleri için: <strong>steinmax16@gmail.com</strong></p>
 </body>
 </html>
